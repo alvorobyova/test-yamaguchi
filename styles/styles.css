@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+
+}
+
+@font-face {
+    font-family: 'Ubuntu-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: url(../fonts/Ubuntu-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../fonts/Montserrat-Black.ttf);
+}
+
+.container {
+    max-width: 1655px;
+    margin: 0 auto;
+}
+
+.table__container {
+    display: grid;
+    justify-content: space-between;
+    grid-template: auto / 765px 647px;
+}
+
+.table {
+    padding: 25px 202px 63px 60px;
+    background: #F3F3F3;
+}
+
+.table__image {
+    position: relative;
+    width: 975px;
+    height: 783px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    align-self: flex-end;
+}
+
+.table__image img {
+    position: absolute;
+    top: 0;
+    transition: top 0.2s ease-in;
+}
+
+.table__text {
+    width: 647px;
+    grid-column: 2 / 3;
+    font-family: "Ubuntu-Light", sans-serif;
+}
+
+.table__text.first-part {
+    grid-row: 1;
+    margin-bottom: 50px;
+}
+.table__text.second-part {
+    grid-row: 2;
+}
+
+.table__title {
+    width: 500px;
+    margin-bottom: 44px;
+    color: #0B64FE;
+    font-size: 62px;
+    line-height: 100%;
+}
+
+.table__text p {
+    width: 500px;
+    color: #181818;
+    font-size: 22px;
+    line-height: 170%;
+}
+
+.buttons {
+    position: absolute;
+    top: 390px;
+    left: 253px;
+    width: 474px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Ubuntu-Light", sans-serif;
+    font-size: 40.194px;
+}
+
+.button {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A6FFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.voice-control {
+    padding: 73px 100px 86px;
+    box-sizing: border-box;
+    background: url("../images/background.png") no-repeat center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.voice-control__container {
+    display: flex;
+    position: relative;
+}
+
+.voice-control__text {
+    width: 586px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.voice-control__title {
+    font-size: 56px;
+    line-height: 70px;
+    margin-bottom: 65px;
+}
+
+.voice-control__description {
+    font-size: 22px;
+    line-height: 170%;
+}
+
+.voice-control__description:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.voice-control__assistant {
+    position: relative;
+    top: -55px;
+    margin-left: 56px;
+}
+
+.voice-control__assistant img {
+    position: relative;
+    z-index: 2;
+    visibility: hidden;
+    transition: visibility 1.5s ease-out;
+}
+
+.black-round {
+    position: absolute;
+    bottom: -50px;
+    left: calc(50% - 90px);
+    width: 193.781px;
+    height: 61.139px;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+    z-index: 1;
+}
+
+.voice-control__interface {
+    position: absolute;
+    top: -73px;
+    right: -280px;
+}
+
+.voice-control__text.text-huge {
+    position: absolute;
+    bottom: 136px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 90%;
+    align-self: flex-end;
+    justify-items: flex-start;
+}
+
+.voice-control__text.text-huge p:last-child {
+    position: absolute;
+    top: 67px;
+    right: -60px;
+    width: 611px;
+    font-size: 61.416px;
+    line-height: 90%;
+}
+
+@keyframes slideOut {
+    0% {
+        transform: translateY(380px) scale(0.1);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes levitation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+

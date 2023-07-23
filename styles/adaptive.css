@@ -1,0 +1,261 @@
+@media screen and (max-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
+    .table__image {
+        width: 700px;
+        height: 562px;
+        align-self: center;
+    }
+
+    .table__image img {
+        width: 100%;
+    }
+
+    .buttons {
+        top: 299px;
+        left: 158px;
+        width: 380px;
+        font-size: 34px;
+    }
+
+    .button {
+        width: 170px;
+        height: 170px;
+    }
+
+    .voice-control {
+        height: 1877px;
+    }
+
+    .voice-control__interface {
+        top: 900px;
+        right: 347px;
+    }
+
+    .voice-control__assistant {
+        top: 101px;
+        margin-left: 145px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        max-width: 768px;
+    }
+
+    .table {
+        padding: 25px 20px 21px;
+    }
+
+    .table__container {
+        grid-template: auto / 1fr;
+    }
+
+    .table__text {
+        width: 100%;
+    }
+
+    .table__title {
+        font-size: 47px;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .table__text p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .table__image {
+        width: 650px;
+        height: 522px;
+        grid-column: 1;
+        grid-row: 2 / 3;
+        left: -5px;
+    }
+
+    .table__image img {
+        width: 100%;
+        left: 34px;
+    }
+
+    .table__text.first-part {
+        grid-column: 1;
+        margin-bottom: 45px;
+    }
+
+    .table__text.second-part {
+        margin-top: 49px;
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .buttons {
+        top: 300px;
+        left: 210px;
+        width: 310px;
+        font-size: 25px;
+    }
+
+    .button {
+        width: 130px;
+        height: 130px;
+    }
+
+    .voice-control {
+        height: 2300px;
+    }
+
+    .voice-control__container {
+        flex-direction: column;
+    }
+
+    .voice-control__assistant {
+        top: -55px;
+        margin-left: 0;
+        align-self: center;
+    }
+
+    .voice-control__interface {
+        position: relative;
+        width: unset;
+        height: 429px;
+        top: 20px;
+        right: -33px;
+    }
+
+    .voice-control__interface img {
+        width: 100%;
+    }
+
+    .voice-control__text.text-huge {
+        bottom: -200px;
+        font-size: 38px;
+        text-transform: uppercase;
+        line-height: 90%;
+    }
+
+    .voice-control__text.text-huge p:last-child {
+        width: 300px;
+        top: 50px;
+        right: -10px;
+        font-size: 49px;
+    }
+
+    .voice-control__text.text-huge p span {
+        font-size: 61px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .container {
+        max-width: 320px;
+    }
+
+    .table {
+        padding: 14px 12px 21px;
+    }
+
+    .table__container {
+        grid-template: auto / 299px;
+    }
+
+    .table__title {
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 38px;
+        margin-bottom: 29px;
+    }
+
+    .table__text p {
+        font-size: 16px;
+    }
+
+    .table__image {
+        width: 307px;
+        height: 246px;
+        left: -5px;
+    }
+
+    .table__image img {
+        left: -5px;
+    }
+
+    .table__text.second-part {
+        margin-top: 40px;
+    }
+
+    .buttons {
+        top: 145px;
+        left: 75px;
+        width: 144px;
+        font-size: 12px;
+    }
+
+    .button {
+        width: 61px;
+        height: 61px;
+    }
+
+    .voice-control {
+        padding: 17px 14px 17px 17px;
+        width: 100%;
+        background: #181818;
+        height: 1740px;
+    }
+
+    .voice-control__text {
+        width: 100%;
+    }
+
+    .voice-control__title {
+        font-size: 34px;
+        margin-bottom: 33px;
+        line-height: 100%;
+    }
+
+    .voice-control__description {
+        font-size: 16px;
+    }
+
+    .voice-control__assistant {
+        width: 289px;
+    }
+
+    .voice-control__assistant img {
+        width: 100%;
+    }
+
+    .black-round {
+        bottom: -64px;
+        left: calc(50% - 95px);
+    }
+
+    .voice-control__interface {
+        width: 412px;
+        top: 20px;
+        right: 40px;
+    }
+
+    .voice-control__text.text-huge {
+        bottom: -62px;
+    }
+
+    .voice-control__text.text-huge p:last-child {
+        right: -3px;
+    }
+
+    @keyframes slideOut {
+        0% {
+            transform: translateY(280px) scale(0.2);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+    }
+}
